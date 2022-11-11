@@ -1,0 +1,117 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-08-20T04:47:07.609Z",
+        "line": 4,
+        "name": "Verify User login to the application through API and get logtoken",
+        "description": "",
+        "id": "login-module-api-automation;verify-user-login-to-the-application-through-api-and-get-logtoken",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2747366800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should add header",
+            "match": {
+              "location": "TC1_LoginStep.user_should_add_header()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: userName cannot be null\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)\r\n\tat io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:54)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)\r\n\tat io.restassured.internal.PreemptiveAuthSpecImpl.basic(PreemptiveAuthSpecImpl.groovy:44)\r\n\tat com.base.BaseClass.basicAuth(BaseClass.java:19)\r\n\tat com.stepdefinition.TC1_LoginStep.user_should_add_basic_authentication_for_login(TC1_LoginStep.java:32)\r\n\tat ✽.User should add basic authentication for login(file:src/test/resources/Features/TC1_Login.feature:6)\r\n",
+              "duration": 335122800,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User should add basic authentication for login",
+            "match": {
+              "location": "TC1_LoginStep.user_should_add_basic_authentication_for_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 664400,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User should send \"POST\" request to login endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TC1_LoginStep.user_should_send_request_to_login_endpoint(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 988000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "CommonStep.user_should_verify_the_status_code_is(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 676900,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User should verify the login response body firstName present as \"Mani\" and get the logtoken saved",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mani\"",
+                  "offset": 64
+                }
+              ],
+              "location": "TC1_LoginStep.user_should_verify_the_login_response_body_firstName_present_as_and_get_the_logtoken_saved(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Module API Automation",
+    "description": "",
+    "id": "login-module-api-automation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC1_Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
